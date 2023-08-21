@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  max-height: 100vh;
+}
+
+/* Estilos para el contenedor del logo y el título */
+nav {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222222;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+  line-height: 90px;
+}
+
+.logo h1 span {
+  font-weight: bold;
+}
+
+.logo img {
+  min-width: 92px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo .pizza {
+  color: #39b24a;
+}
+
+.logo .y {
+  color: #ffffff;
+}
+
+.logo .front {
+  color: #fc200c;
+}
+
+.listado,
+.listado-footer {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.listado li {
+  margin: 0;
+}
+
+.listado a {
+  text-decoration: none;
+  border-radius: 5px;
+  color: #f3f3f3;
+  padding: 10px;
+}
+
+.burgerina {
+  display: none;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+
+.cajaconimagen,
+.cajaconlista {
+  position: relative;
+  width: 100%;
+  height: 331.43px;
+  max-width: 490px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subtitulo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: red;
+}
+
+.subtitulo span {
+  color: #f3f3f3;
+}
+
+.cajaconlista {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.texto-podio {
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  top: 0;
+  color: red;
+}
+
+.lista-podio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.lista-pizza h4 {
+  padding-bottom: 12px;
+}
+
+.lista-pizza ol li {
+  padding: 5px 0 5px 0;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: #222222;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.listado-footer {
+  flex-direction: column;
+}
+
+.listado-footer a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.listado-footer li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer .logo h1 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1004px) {
+  nav ul.listado {
+    display: none;
+  }
+
+  .burgerina {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+  }
+
+  nav div.burgerina .rayita {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    z-index: 3;
+  }
+
+  .logo img {
+    width: 57.4px;
+    height: 50px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+}
